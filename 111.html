@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduate</title>
+</head>
+
+<body>
+    <script>
+        let Points1 = 84;
+        console.log(`第一次成績:${Number(Points1)}分`);
+
+        let Points2 = 50;
+        console.log(`第二次成績:${Number(Points2)}分`);
+
+        let Points3 = 47;
+        console.log(`第三次成績:${Number(Points3)}分`);
+
+        let Range = Number((Points1 + Points2 + Points3)/3);
+        console.log(`平均成績:${Number(parseInt(Range))}分`);
+
+        if (Range < 60)
+        {console.log(`總成績:不及格`);}
+        else if(Range >= 60)
+        {console.log(`總成績:及格`);}
+    </script>
+
+</body>
+
+</html>

@@ -15,8 +15,33 @@
     <script>
         let UserName = "YNs";
         console.log(`名字:${UserName}`)
-        UserAge = 24;
-        console.log(`年紀${UserAge}`);
+        let UserAge = 24;
+        console.log(`年紀:${UserAge}歲`);
+        UserAge = "24";
+        //取得資料型態 => typeof(變數名)
+        console.log(typeof (UserAge));
+        //未轉換數值
+        console.log(`五年後年齡:${UserAge + 5}歲`);
+        //已暫時轉換為數值
+        console.log(`五年後年齡:${Number(UserAge) + 5}歲`);
+        console.log(typeof (UserAge));
+        //真正要字串轉換數值，必須重新指派轉換結果給原來的變數
+        UserAge = Number(UserAge);
+        console.log(`五年後年齡:${UserAge + 5}歲`);
+        console.log(typeof (UserAge));
+
+        //浮點數 =>帶有小數點資料
+        let pi = 3.14;
+        let r = 6;
+        let area = pi*r*r;
+        console.log(area);
+        //parseInt() => 無條件捨去到整數位
+        console.log(parseInt(area));
+        //.toFixed(數字) => 取小數點到...位 =>此時已轉換為字串
+        console.log(area.toFixed(2));
+        //若要轉換為數字 =>需再加上Number()
+        console.log(Number(area.toFixed(2))+1);
+        
     </script>
 
 </body>
